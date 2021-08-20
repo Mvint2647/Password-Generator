@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>My take on a passkey generator</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h1>My Passkey Generator</h1>
+      </header>
+      <div class="square">
+        <div class="square-header">
+          <h2>Generate a passkey</h2>
+        </div>
+        <div class="square-body">
+          <textarea
+            readonly
+            id="passkey"
+            placeholder="Your Secure passkey"
+            aria-label="Generated passkey"
+          ></textarea>
+        </div>
+        <div class="square-footer">
+          <button id="generate" class="btn">Generate Passkey</button>
+        </div>
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
