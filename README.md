@@ -18,10 +18,11 @@ generating a password
 A trial of a Passcode-Generator
 
 ## Screenshots
-![Password-Generator](assets/images/)
-![Password-Generator](assets/images/)
-![Password-Generator](assets/images/)
-![Password-Generator](assets/images/)
+![Password-Generator](assets/Develop/image/matrix.png)
+
+![Password-Generator](assets/Develop/image/ss1033.png)
+![Password-Generator](assets/Develop/image/ss1034.png)
+![Password-Generator](assets/Develop/image/ss1035.png)
 
 =======
 
