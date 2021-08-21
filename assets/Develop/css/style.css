@@ -6,6 +6,7 @@
 
 html,
 body,
+
 .wrapper {
   height: 100%;
   margin: 0;
@@ -13,30 +14,29 @@ body,
 }
 
 body {
-  font-family: sans-serif;
-  background-color: #000000;
+  font-family: 'Courier New', Courier, monospace;
+  display: block;
+  justify-content: center;
 }
 
-.wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
+
 
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 100%, 50%);
+  color: hsl(0, 0%, 100%);
+  
+  
 }
 
 .square {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
+  background-color:rgba(0, 0, 0, 0.589);
+  border-radius: 0px;
   border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
-  color: hsl(206, 17%, 28%);
-  font-size: 18px;
+  box-shadow: rgb(13, 255, 0) 6px 6px 8px 6px;
+  color: (0, 0, 0, 0.445);
+  font-size: 20px;
   margin: 0 auto;
   max-width: 800px;
   padding: 30px 40px;
@@ -46,13 +46,16 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: (0, 0, 0, 0.445);
   height: 2px;
 }
 
 .square-body {
-  min-height: 100px;
+  min-height: 130px;
 }
+
+
+
 
 .square-footer {
   text-align: center;
@@ -62,8 +65,8 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
-  height: 2px;
+  background: #00000085;
+  height: 5px;
 }
 
 .square-footer::after {
@@ -74,11 +77,11 @@ header {
 
 .btn {
   border: none;
-  background-color: hsl(360, 91%, 36%);
+  background-color: #2ae8008b;
   border-radius: 25px;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
+  box-shadow: rgba(255, 255, 255, 0.489) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px
     0px;
-  color: hsl(0, 0%, 100%);
+  color: #ffffff;
   display: inline-block;
   font-size: 22px;
   line-height: 22px;
@@ -86,33 +89,32 @@ header {
   padding: 14px 34px;
   text-align: center;
   cursor: pointer;
+  font-family: 'Courier New', Courier, monospace;
 }
 
 button[disabled] {
   cursor: default;
-  background: #0077ff;
+  background: #ffffff;
 }
 
-.float-right {
-  float: right;
-}
 
-#passkey {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-  border: none;
+h2 {
+text-align: center;
+color: white;
+
+}
+#passcode {
   display: block;
   width: 100%;
   padding-top: 15px;
   padding-left: 15px;
   padding-right: 15px;
   padding-bottom: 85px;
-  font-size: 1.2rem;
+  font-size: 3rem;
   text-align: center;
   margin-top: 10px;
   margin-bottom: 10px;
-  border: 2px dashed #c0c7cf;
+  border: 9px solid #000000;
   border-radius: 6px;
   resize: none;
   overflow: hidden;
@@ -120,18 +122,18 @@ button[disabled] {
 
 @media (max-width: 690px) {
   .btn {
-    font-size: 1rem;
+    font-size: 1.2rem;
     margin: 16px 0px 0px 0px;
     padding: 10px 15px;
   }
 
-  #passkey {
-    font-size: 1rem;
+  #passcode {
+    font-size: 3rem;
   }
 }
 
 @media (max-width: 500px) {
   .btn {
-    font-size: 0.8rem;
+    font-size: 1.0rem;
   }
 }
