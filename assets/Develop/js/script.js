@@ -33,11 +33,11 @@ function generatepasscode() {
 }
 //----------------------------------------------------------
 if (hasUppercaseletter) {
-    var random = Math.floor(Math.random() * Uppercaseletter.length);
-    var selectedUppercaseletter = Uppercaseletter[random];
+    var random = Math.floor(Math.random() * uppercaseletter.length);
+    var selecteduppercaseletter = uppercaseletter[random];
     possible = possible.concat(Uppercaseletter);
-    stored.push(selectedUppercaseletter);
-    console.log(selectedUppercaseletter);
+    stored.push(selecteduppercaseletter);
+    console.log(selecteduppercaseletter);
 }
 //----------------------------------------------------------
 
