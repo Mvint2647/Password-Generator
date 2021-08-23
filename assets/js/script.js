@@ -22,8 +22,8 @@ function generatePasscode() {
 
     if  (hasLowerLetter) {
     var random = Math.floor(Math.random() * lowerLetter.length);
-    var selectedLowerLetter = Lowerletter[random];
-    stored.push(selectedletter);
+    var selectedLowerLetter = lowerLetter[random];
+    stored.push(selectedLowerLetter);
     possible = possible.concat(lowerLetter);
     console.log(selectedLowerLetter);
 }
@@ -54,9 +54,9 @@ if (hasNumber) {
 }
 
 
-    for (var i = 0; i < length - stored. length; i++) {
-        var random = Math.floor(Math.random() * letter.passcodeLength);
-        passcode += letter[random];
+    for (var i = 0; i < length - stored.length; i++) {
+        var random = Math.floor(Math.random() * stored.length);
+        passcode += stored[random];
     }
         passcode += stored.join("");
     
@@ -72,11 +72,11 @@ if (hasNumber) {
     }
 //----------------------------------------------------------
     function writepasscode() {
-     var passcode = generatepasscode();
+     var passcode = generatePasscode();
      var passcodeText = document.querySelector("#passcode");
 
      if (passcode){
          passcodeText.value = passcode;
 }}
 
-    generateBtn.addEventListener("click", generateBtn);
+    generateBtn.addEventListener("click", writepasscode);
