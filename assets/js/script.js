@@ -1,52 +1,48 @@
-var GenerateBtn = document.querySelector("#generate");
+var generateBtn = document.querySelector("#generate");
 var number = "0123456789";
 var special = "!@#$%^&*()<=_-`>?:;{|}~";
-var letter = "abcdefghijklmnopqrstuvwxyz";
-var Uppercaseletter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
+var lowerLetter = "abcdefghijklmnopqrstuvwxyz";
+var uppercaseLetter = "ABCDEFGHIJKLMNOPQRSTUVWXYZ";
 
 var stored = []; //----------------------------------------
 
-var hasUppercaseletter = true;
-var hasNumber = true;
-var hasLetter = true;
-var hasSpecial = true;
-
 var length = 34;
 
-hasUppercase = confirm('Uppercaseletter');
-hasSpecial = confirm('Special');
-hasLetter = confirm('Letter');
 hasNumber = confirm('Number');
+hasSpecial = confirm('Special');
+hasLowerLetter = confirm('lowerLetter');
+hasUppercaseLetter = confirm('UppercaseLetter');
 
-function generatepasscode() {
+
+function generatePasscode() {
     
     var passcode = "";
     var possible = "";
 
 
-    if  (hasLetter) {
-    var random = Math.floor(Math.random() * letter.length);
-    var selectedletter = letter[random];
+    if  (hasLowerLetter) {
+    var random = Math.floor(Math.random() * lowerLetter.length);
+    var selectedLowerLetter = Lowerletter[random];
     stored.push(selectedletter);
-    possible = possible.concat(letter);
-    console.log(selectedletter);
+    possible = possible.concat(lowerLetter);
+    console.log(selectedLowerLetter);
 }
 //----------------------------------------------------------
-if (hasUppercaseletter) {
-    var random = Math.floor(Math.random() * uppercaseletter.length);
-    var selecteduppercaseletter = uppercaseletter[random];
-    possible = possible.concat(Uppercaseletter);
-    stored.push(selecteduppercaseletter);
-    console.log(selecteduppercaseletter);
+if (hasUppercaseLetter) {
+    var random = Math.floor(Math.random() * uppercaseLetter.length);
+    var selectedUppercaseLetter = uppercaseLetter[random];
+    possible = possible.concat(uppercaseLetter);
+    stored.push(selectedUppercaseLetter);
+    console.log(selectedUppercaseLetter);
 }
 //----------------------------------------------------------
 
 if (hasSpecial) {
     var random = Math.floor(Math.random() * special.length);
-    var selectedspecial = special[random];
+    var selectedSpecial = special[random];
     possible = possible.concat(special);
-    stored.push(selectedspecial);
-    console.log(selectedspecial);
+    stored.push(selectedSpecial);
+    console.log(selectedSpecial);
 }
 
 if (hasNumber) {
@@ -58,8 +54,8 @@ if (hasNumber) {
 }
 
 
-    for (var i = 0; i < length - stored.length; i++) {
-        var random = Math.floor(Math.random() * letter.length);
+    for (var i = 0; i < length - stored. length; i++) {
+        var random = Math.floor(Math.random() * letter.passcodeLength);
         passcode += letter[random];
     }
         passcode += stored.join("");
@@ -83,4 +79,4 @@ if (hasNumber) {
          passcodeText.value = passcode;
 }}
 
- GenerateBtn.addEventListener("click", writepasscode);
+    generateBtn.addEventListener("click", generateBtn);
