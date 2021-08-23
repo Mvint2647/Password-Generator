@@ -32,7 +32,7 @@ if (hasUppercaseLetter) {
     var random = Math.floor(Math.random() * uppercaseLetter.length);
     var selectedUppercaseLetter = uppercaseLetter[random];
     possible = possible.concat(uppercaseLetter);
-    stored.push(selectedUppercaseLetter);
+     stored.push(selectedUppercaseLetter);
     console.log(selectedUppercaseLetter);
 }
 //----------------------------------------------------------
@@ -47,16 +47,17 @@ if (hasSpecial) {
 
 if (hasNumber) {
     var random = Math.floor(Math.random() * number.length);
-    var selectedNumber = [random];
+    var selectedNumber = number[random];
     possible = possible.concat(number);
     stored.push(selectedNumber);
     console.log(selectedNumber);
 }
+     console.log ("value of stored", stored);
 
-
-    for (var i = 0; i < length - stored.length; i++) {
+    for (var i = 0; i < length ; i++) {
         var random = Math.floor(Math.random() * stored.length);
         passcode += stored[random];
+        console.log("random",random);
     }
         passcode += stored.join("");
     
